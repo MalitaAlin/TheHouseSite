@@ -1,0 +1,25 @@
+#titlebox h1{
+    text-transform: uppercase;
+}
+
+.mascot-box{
+    margin:1% 12% ;
+   /* border: 3px solid rgb(33, 32, 32);*/
+    border-radius: 24px;
+    height:auto;
+    padding:0;
+  
+    background:rgb(239, 237, 237);
+    box-shadow:15px 10px  #a7a7a776;
+  }
+  
+  
+  .mascot-icon{
+    margin:5% 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width:75%;
+    background:rgb(248, 252, 252);
+    border-radius:30px;
+    padding:0;
+  }
