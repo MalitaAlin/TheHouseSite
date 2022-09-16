@@ -7,6 +7,14 @@ body, html {
    scroll-behavior: smooth; 
   }
   
+  /*@font-face {
+    font-family: BioRhyme;
+    src: url(.woff);
+ }*/
+ ul {
+  list-style-type: none;
+}
+
   .fade-in { animation: fadeIn 2s; } /*fadeIn is the animation name*/
 
   @keyframes fadeIn {
@@ -18,24 +26,59 @@ body, html {
     margin: 0 0 6% 0;
   }
 /***Title Section ***/
-#titlebox h1{
-    text-transform: uppercase;
+#title-box .navbar{
+  width:fit-content;
+  border-radius:20px;
+  position:relative;
+  right:0;
+  padding:5px 20px ;
+  font-size:1rem;
+  margin:5px;
 }
 
+#title-box .nav-link{
+  font-weight:bold;
+}
+
+#title-box .nav-link:hover{
+  color:rgb(221, 235, 248);
+}
+
+#title-box .card-body{
+  background: #076585;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #fff, #076585);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #fff, #076585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.maintitle{
+  margin:5px 2%;
+  padding:2% 0 0 0;
+text-transform:uppercase;
+  font-size:5.8vw;
+  color:rgba(147, 117, 56, 0.993);
+  font-family: "BioRhyme";
+}
+
+
+.title-icon{
+width:40%;
+}
+
+/***AboutSection ***/
 .mascot-box{
-    margin:5% 10% ;
+    margin:5% 12% ;
    /* border: 3px solid rgb(33, 32, 32);*/
     border-radius: 24px;
     height:auto;
-    padding:0;
+    padding:5px;
 
     background:rgb(239, 237, 237);
     box-shadow:15px 10px  #a7a7a776;
   }
   
   .mascot-box p{
-    margin:12% 0;
-    justify-content: center;
+    margin:10% 0;
+   
   }
 
   .mascot-icon{
@@ -47,6 +90,10 @@ body, html {
   }
 
 /***Housians Section***/
+#rostersection .row {
+  margin:0 5% ;
+}
+
 #rostersection .col {
 margin:1% 0;
 }
@@ -80,14 +127,18 @@ text-align:center;
 
 
   /***Rooms Section***/
-  #roomssection .col {
- 
-    }
-    
     .roomcard .card-header{
 
     }
     
+    #roomssection .row {
+      margin:0 2% ;
+    }
+    
+    #roomssection .col {
+    margin:1% 0;
+    }
+
     .roomcard .card-footer{
       text-align:center;
       font-size:1.4rem;
